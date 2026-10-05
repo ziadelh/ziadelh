@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="320" viewBox="0 0 1200 320" role="img" aria-labelledby="t d">
+  <title id="t">Ziad Elhussein — AI &amp; Machine Learning Engineer</title>
+  <desc id="d">Animated banner with a neural-network motif</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0b1020"/>
+      <stop offset="0.55" stop-color="#141a3a"/>
+      <stop offset="1" stop-color="#0c3b46"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#818cf8"/>
+      <stop offset="1" stop-color="#2dd4bf"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.82" cy="0.5" r="0.6">
+      <stop offset="0" stop-color="#2dd4bf" stop-opacity="0.28"/>
+      <stop offset="1" stop-color="#2dd4bf" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0V40" fill="none" stroke="#ffffff" stroke-opacity="0.045" stroke-width="1"/>
+    </pattern>
+    <clipPath id="round"><rect width="1200" height="320" rx="22"/></clipPath>
+  </defs>
+  <style>
+    .name { font: 800 64px 'Segoe UI', 'Helvetica Neue', Arial, sans-serif; fill: #f8fafc; letter-spacing: -1px; }
+    .role { font: 600 26px 'Segoe UI', 'Helvetica Neue', Arial, sans-serif; fill: url(#accent); }
+    .tag  { font: 400 18px 'Segoe UI', 'Helvetica Neue', Arial, sans-serif; fill: #94a3b8; letter-spacing: 0.4px; }
+    .edge { stroke: url(#accent); stroke-width: 1.4; stroke-opacity: 0.35; fill: none; }
+    .node { fill: #0b1020; stroke: url(#accent); stroke-width: 2; }
+    .pulse { fill: #2dd4bf; animation: pulse 3.2s ease-in-out infinite; }
+    .p2 { animation-delay: .8s; fill: #818cf8; } .p3 { animation-delay: 1.6s; } .p4 { animation-delay: 2.4s; fill: #818cf8; }
+    .flow { stroke-dasharray: 6 10; animation: flow 2.4s linear infinite; stroke-opacity: .65; }
+    .rise { opacity: 0; animation: rise .9s ease-out forwards; }
+    .r2 { animation-delay: .25s; } .r3 { animation-delay: .5s; }
+    @keyframes pulse { 0%,100% { opacity: .15; r: 4; } 50% { opacity: 1; r: 7; } }
+    @keyframes flow { to { stroke-dashoffset: -32; } }
+    @keyframes rise { from { opacity: 0; transform: translateY(14px); } to { opacity: 1; transform: translateY(0); } }
+    @media (prefers-reduced-motion: reduce) { .pulse, .flow, .rise { animation: none; opacity: 1; } }
+  </style>
+
+  <g clip-path="url(#round)">
+    <rect width="1200" height="320" fill="url(#bg)"/>
+    <rect width="1200" height="320" fill="url(#grid)"/>
+    <rect width="1200" height="320" fill="url(#glow)"/>
+
+    <!-- neural network motif (right side): 3 input · 4 hidden · 4 hidden · 2 output -->
+    <g transform="translate(700 0)">
+      <g class="edge">
+        <path d="M60 80 L200 55 M60 80 L200 130 M60 80 L200 205 M60 80 L200 270"/>
+        <path d="M60 160 L200 55 M60 160 L200 130 M60 160 L200 205 M60 160 L200 270"/>
+        <path d="M60 240 L200 55 M60 240 L200 130 M60 240 L200 205 M60 240 L200 270"/>
+        <path d="M200 55 L340 70 M200 55 L340 150 M200 55 L340 230 M200 130 L340 70 M200 130 L340 150 M200 130 L340 230"/>
+        <path d="M200 205 L340 70 M200 205 L340 150 M200 205 L340 230 M200 270 L340 70 M200 270 L340 150 M200 270 L340 230"/>
+        <path d="M340 70 L470 110 M340 70 L470 210 M340 150 L470 110 M340 150 L470 210 M340 230 L470 110 M340 230 L470 210"/>
+      </g>
+      <g class="edge flow">
+        <path d="M60 80 L200 130 L340 150 L470 110"/>
+        <path d="M60 240 L200 205 L340 230 L470 210"/>
+      </g>
+      <g>
+        <circle class="node" cx="60" cy="80" r="11"/><circle class="node" cx="60" cy="160" r="11"/><circle class="node" cx="60" cy="240" r="11"/>
+        <circle class="node" cx="200" cy="55" r="11"/><circle class="node" cx="200" cy="130" r="11"/><circle class="node" cx="200" cy="205" r="11"/><circle class="node" cx="200" cy="270" r="11"/>
+        <circle class="node" cx="340" cy="70" r="11"/><circle class="node" cx="340" cy="150" r="11"/><circle class="node" cx="340" cy="230" r="11"/>
+        <circle class="node" cx="470" cy="110" r="13"/><circle class="node" cx="470" cy="210" r="13"/>
+      </g>
+      <g>
+        <circle class="pulse" cx="200" cy="130" r="4"/>
+        <circle class="pulse p2" cx="340" cy="150" r="4"/>
+        <circle class="pulse p3" cx="200" cy="205" r="4"/>
+        <circle class="pulse p4" cx="470" cy="110" r="4"/>
+      </g>
+    </g>
+
+    <!-- text -->
+    <g>
+      <text class="name rise" x="64" y="140">Ziad Elhussein</text>
+      <text class="role rise r2" x="66" y="188">AI &amp; Machine Learning Engineer</text>
+      <text class="tag rise r3" x="66" y="232">Data → models → products people can actually use.</text>
+      <rect x="66" y="252" width="84" height="4" rx="2" fill="url(#accent)"/>
+    </g>
+  </g>
+</svg>
