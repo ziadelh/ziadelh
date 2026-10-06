@@ -4,7 +4,7 @@
 
 <br>
 
-[**Featured**](#featured--pawlytics) &nbsp;·&nbsp; [**Selected work**](#selected-work) &nbsp;·&nbsp; [**All projects**](#all-projects) &nbsp;·&nbsp; [**Toolbox**](#toolbox) &nbsp;·&nbsp; [**Contact**](#get-in-touch)
+[**Portfolio site**](https://ziadelh.github.io/) &nbsp;·&nbsp; [**Featured**](#featured--pawlytics) &nbsp;·&nbsp; [**Selected work**](#selected-work) &nbsp;·&nbsp; [**All projects**](#all-projects) &nbsp;·&nbsp; [**Toolbox**](#toolbox) &nbsp;·&nbsp; [**Contact**](#get-in-touch)
 
 ![Location](https://img.shields.io/badge/Cairo,_Egypt_·_Remote-141a3a?style=for-the-badge)
 ![Focus](https://img.shields.io/badge/Focus-Multimodal_ML_·_NLP_·_Audio_·_Vision-0c3b46?style=for-the-badge)
@@ -211,5 +211,7 @@ confusion matrices) · model explainability · genetic algorithms · shipping mo
 <a href="https://www.linkedin.com/in/ziad-elhussein"><img src="assets/btn-linkedin.svg" alt="LinkedIn: ziad-elhussein" height="52"></a>
 &nbsp;
 <a href="mailto:ziadelhussein@gmail.com"><img src="assets/btn-email.svg" alt="Email: ziadelhussein@gmail.com" height="52"></a>
+&nbsp;
+<a href="https://ziadelh.github.io/"><img src="assets/btn-website.svg" alt="Portfolio website: ziadelh.github.io" height="52"></a>
 
 </div>
